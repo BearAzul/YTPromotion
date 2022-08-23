@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- html meta tags -->
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- font connected -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Source+Code+Pro:wght@300;400&display=swap"
+      rel="stylesheet">
+
+   <!-- icons from fontawesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+   <link rel="stylesheet" href="../fontawesome-icon/css/all.min.css">
+
+   <!-- custom css -->
+   <link rel="stylesheet" href="css/style.css">
+
+   <!-- logo website -->
+   <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+
+   <!-- localstorage dark light mode -->
+   <script>
+      if (localStorage.theme === 'light' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+         document.documentElement.classList.add('light');
+      } else {
+         document.documentElement.classList.remove('light');
+      }
+   </script>
+   <title>Youtube Promotion | Adya Abdu Azizul Hakim</title>
+</head>
+
+<body>
+
+   <!-- navbar navigation -->
+   <nav class="navbar">
+      <div class="nav_group">
+         <div class="brands">
+            <a href="#home">YTPromotion<br><span>Adya Abdu Azizul Hakim</span></a>
+         </div>
+         <div class="nav_link">
+            <ul>
+               <li><a href="#home">HOME</a></li>
+               <li><a href="#about">ABOUT</a></li>
+               <li><a href="#last-content">CONTENT</a></li>
+               <li><a href="#purchase">PATRONIZE</a></li>
+               <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="sub">
+               <a href="https://www.youtube.com/channel/UCnyvM20nDQmtc2aG--WMqqg" target="_blank">SUBSCRIBE</a>
+            </div>
+            <button class="dark-light-mode" type="button">
+               <input type="checkbox" id="toggle">
+               <label for="toggle">
+                  <div class="btnMode"></div>
+               </label>
+            </button>
+         </div>
+         <button class="burger" type="button">
+            <span class="menu" role="hamburger"></span>
+         </button>
+      </div>
+   </nav>
+
+   <!-- HOME SECTION -->
+   <section id="home">
+      <div class="container">
+         <div class="wrapp">
+            <div class="jumbotron one">
+               <div class="sosmed">
+                  <div class="line one"></div>
+                  <a href="https://web.facebook.com/abdu.zv" target="_blank">
+                     <span class="tooltip" role="tooltip">Facebook</span>
+                     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                     </svg>
+                  </a>
+                  <a href="https://twitter.com/AbduAdya" target="_blank">
+                     <span class="tooltip" role="tooltip">Twitter</span>
+                     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                     </svg>
+                  </a>
+                  <a href="https://www.instagram.com/az.izul_" target="_blank">
+                     <span class="tooltip" role="tooltip">Instagram</span>
+                     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                     </svg>
+                  </a>
+                  <a href="https://github.com/azulzv" target="_blank">
+                     <span class="tooltip" role="tooltip">Github</span>
+                     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                     </svg>
+                  </a>
+                  <a href="#" target="_blank">
+                     <span class="tooltip" role="tooltip">Telegram</span>
+                     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                     </svg>
+                  </a>
+                  <div class="line two"></div>
+               </div>
+               <div class="profile">
+                  <h2 data-text="adya abdu azizul hakim">adya abdu azizul hakim</h2>
+                  <p>I am a novice programmer at the university of Semarang and I am also a youtube creator, on youtube
+                     I contain video
+                     tutorials on making a web or other but for now I only know a few programming languages, namely
+                     html, css, javascript and
+                     php. for more details, you can click the my content button to see some of my latest videos.</p>
+               </div>
+               <div class="to-content">
+                  <a href="#last-content">
+                     <button type="button">My Content</button>
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCnyvM20nDQmtc2aG--WMqqg" target="_blank">
+                     <button type="button"><i class="fa-solid fa-play"></i></button>
+                  </a>
+               </div>
+            </div>
+            <div class="jumbotron two">
+               <img src="img/profile.png" alt="profile-image">
+               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" id="blobSvg"
+                  filter="blur(0px)" style="opacity: 1;" transform="rotate(-93)">
+                  <defs>
+                     <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%"></stop>
+                        <stop offset="100%"></stop>
+                     </linearGradient>
+                  </defs>
+                  <path id="blob" fill="url(#gradient)" style="opacity: 1;">
+                     <animate attributeName="d" dur="9s" repeatCount="indefinite"
+                        values="M469.34657,320.38487Q443.8468,390.76973,373.53877,402.1156Q303.23073,413.46147,238.88463,448.30757Q174.53853,483.15367,122.76833,431.6929Q70.99814,380.23213,76.84563,315.11607Q82.69313,250,78.9227,186.3071Q75.15227,122.6142,131.92223,91.73003Q188.6922,60.84587,253.2305,51.539Q317.7688,42.23213,359.5759,90.92433Q401.383,139.61653,448.11467,194.80827Q494.84633,250,469.34657,320.38487Z;M453.70516,317.0107Q433.36186,384.02139,362.52423,381.146Q291.6866,378.27061,242.8433,399.93801Q194,421.60541,117.08118,412.14317Q40.16237,402.68093,64.29201,326.34046Q88.42165,250,109.0107,206.32693Q129.59975,162.65387,148.64317,78.76495Q167.6866,-5.12397,241.8433,20.74072Q316,46.60541,350.8433,99.17023Q385.6866,151.73505,429.86753,200.86753Q474.04846,250,453.70516,317.0107Z;M437.48517,301.93698Q392.82947,353.87396,357.50371,413.21131Q322.17795,472.54867,247.51112,479.51159Q172.8443,486.47452,129.54819,427.64458Q86.25209,368.81464,81.57785,309.40732Q76.90361,250,83.86283,191.93327Q90.82205,133.86654,141.98146,104.152Q193.14087,74.43745,247.01483,83.88926Q300.88878,93.34106,355.51112,113.62234Q410.13346,133.90361,446.13717,191.95181Q482.14087,250,437.48517,301.93698Z;M410.95278,296.31131Q377.83016,342.62262,346.59668,396.40799Q315.3632,450.19336,253.66275,438.70512Q191.9623,427.21687,143.72172,394.79004Q95.48115,362.3632,86.24057,306.1816Q77,250,74.51885,185.3632Q72.0377,120.72639,123.0377,68.91975Q174.0377,17.1131,239.88914,47.47163Q305.74057,77.83016,366.40332,99.75233Q427.06607,121.67451,435.57074,185.83725Q444.0754,250,410.95278,296.31131Z;M460.19079,314.81752Q429.48296,379.63503,366.74655,397.33779Q304.01014,415.04055,238.62673,450.6401Q173.24331,486.23965,141.80231,418.853Q110.3613,351.46635,87.51337,300.73317Q64.66545,250,86.56406,198.80231Q108.46268,147.60462,149.75669,107.39355Q191.05069,67.18248,258.9189,40.41566Q326.7871,13.64883,381.21107,64.45621Q435.63503,115.26359,463.26683,182.63179Q490.89862,250,460.19079,314.81752Z;M469.34657,320.38487Q443.8468,390.76973,373.53877,402.1156Q303.23073,413.46147,238.88463,448.30757Q174.53853,483.15367,122.76833,431.6929Q70.99814,380.23213,76.84563,315.11607Q82.69313,250,78.9227,186.3071Q75.15227,122.6142,131.92223,91.73003Q188.6922,60.84587,253.2305,51.539Q317.7688,42.23213,359.5759,90.92433Q401.383,139.61653,448.11467,194.80827Q494.84633,250,469.34657,320.38487Z">
+                     </animate>
+                  </path>
+               </svg>
+            </div>
+         </div>
+      </div>
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="15%" id="blobSvg"
+         filter="blur(0px)" style="opacity: 1;" transform="rotate(93)" class="svg">
+         <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+               <stop offset="0%"></stop>
+               <stop offset="100%"></stop>
+            </linearGradient>
+         </defs>
+         <path id="blob" fill="url(#gradient)" style="opacity: 1;">
+            <animate attributeName="d" dur="9s" repeatCount="indefinite"
+               values="M469.34657,320.38487Q443.8468,390.76973,373.53877,402.1156Q303.23073,413.46147,238.88463,448.30757Q174.53853,483.15367,122.76833,431.6929Q70.99814,380.23213,76.84563,315.11607Q82.69313,250,78.9227,186.3071Q75.15227,122.6142,131.92223,91.73003Q188.6922,60.84587,253.2305,51.539Q317.7688,42.23213,359.5759,90.92433Q401.383,139.61653,448.11467,194.80827Q494.84633,250,469.34657,320.38487Z;M453.70516,317.0107Q433.36186,384.02139,362.52423,381.146Q291.6866,378.27061,242.8433,399.93801Q194,421.60541,117.08118,412.14317Q40.16237,402.68093,64.29201,326.34046Q88.42165,250,109.0107,206.32693Q129.59975,162.65387,148.64317,78.76495Q167.6866,-5.12397,241.8433,20.74072Q316,46.60541,350.8433,99.17023Q385.6866,151.73505,429.86753,200.86753Q474.04846,250,453.70516,317.0107Z;M437.48517,301.93698Q392.82947,353.87396,357.50371,413.21131Q322.17795,472.54867,247.51112,479.51159Q172.8443,486.47452,129.54819,427.64458Q86.25209,368.81464,81.57785,309.40732Q76.90361,250,83.86283,191.93327Q90.82205,133.86654,141.98146,104.152Q193.14087,74.43745,247.01483,83.88926Q300.88878,93.34106,355.51112,113.62234Q410.13346,133.90361,446.13717,191.95181Q482.14087,250,437.48517,301.93698Z;M410.95278,296.31131Q377.83016,342.62262,346.59668,396.40799Q315.3632,450.19336,253.66275,438.70512Q191.9623,427.21687,143.72172,394.79004Q95.48115,362.3632,86.24057,306.1816Q77,250,74.51885,185.3632Q72.0377,120.72639,123.0377,68.91975Q174.0377,17.1131,239.88914,47.47163Q305.74057,77.83016,366.40332,99.75233Q427.06607,121.67451,435.57074,185.83725Q444.0754,250,410.95278,296.31131Z;M460.19079,314.81752Q429.48296,379.63503,366.74655,397.33779Q304.01014,415.04055,238.62673,450.6401Q173.24331,486.23965,141.80231,418.853Q110.3613,351.46635,87.51337,300.73317Q64.66545,250,86.56406,198.80231Q108.46268,147.60462,149.75669,107.39355Q191.05069,67.18248,258.9189,40.41566Q326.7871,13.64883,381.21107,64.45621Q435.63503,115.26359,463.26683,182.63179Q490.89862,250,460.19079,314.81752Z;M469.34657,320.38487Q443.8468,390.76973,373.53877,402.1156Q303.23073,413.46147,238.88463,448.30757Q174.53853,483.15367,122.76833,431.6929Q70.99814,380.23213,76.84563,315.11607Q82.69313,250,78.9227,186.3071Q75.15227,122.6142,131.92223,91.73003Q188.6922,60.84587,253.2305,51.539Q317.7688,42.23213,359.5759,90.92433Q401.383,139.61653,448.11467,194.80827Q494.84633,250,469.34657,320.38487Z">
+            </animate>
+         </path>
+      </svg>
+   </section>
+
+   <!-- ABOUT SECTION -->
+   <section id="about">
+      <div class="circle circle-one"></div>
+      <div class="circle circle-two"></div>
+      <div class="container">
+         <div class="title">
+            <h3>About Me</h3>
+            <p>here is a video about my curriculum vitae, my education and where I live</p>
+            <hr>
+            <button id="btnMore" class="btnMore">read more</button>
+         </div>
+         <div class="wrapp">
+            <div class="details">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/09AFWIZlCvw"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen loop></iframe>
+            </div>
+            <div class="details">
+               <span id="readMore">
+                  <p>2nd semester Informatics Engineering student at Semarang University who is energetic and never
+                     gives
+                     up. Although not
+                     very active in campus organization membership. But I have high interest in FrontEnd Programming and
+                     Web Development.</p>
+                  <div class="group">
+                     <div class="group-text">
+                        <div class="text">
+                           <label>Name :</label>
+                           <p>Adya Abdu Azizul Hakim</p>
+                        </div>
+                        <div class="text">
+                           <label>Email :</label>
+                           <p>adyaabduazizulhakim@gmail.com</p>
+                        </div>
+                     </div>
+                     <div class="group-text">
+                        <div class="text">
+                           <label>Phone :</label>
+                           <p>+62 896 1374 2316</p>
+                        </div>
+                        <div class="text">
+                           <label>Link github :</label>
+                           <p>https://github.com/azulzv</p>
+                        </div>
+                     </div>
+                  </div>
+               </span>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- CONTENT SECTION -->
+   <section id="last-content">
+      <div class="circle circle-one"></div>
+      <div class="circle circle-two"></div>
+      <div class="container">
+         <div class="title">
+            <h3>Last Content</h3>
+            <p>here are the last few videos that I have made with the following video, hopefully it will help you in
+               learning to make a
+               simple website or something else</p>
+            <hr>
+         </div>
+         <div class="wrapp">
+            <div class="content main-content">
+               <div class="videos">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/z2pQ-H4WrDQ?rel=0"
+                     title="YouTube video player" frameborder="0"
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                     allowfullscreen></iframe>
+               </div>
+               <h3 class="video-title">
+                  Simple Website (html dan css)
+               </h3>
+            </div>
+            <div class="content choose-content">
+               <span id="viewMore">
+                  <div class="videos">
+                     <img class="thumbnail" data-id="z2pQ-H4WrDQ" data-title="Simple Website (html dan css)"
+                        src="img/simple_web_thumb.jpg" alt="Website Sederhana Thumb" />
+                     <div class="play-icon">
+                        <img src="img/youtube-play-btn.svg" alt="" />
+                     </div>
+                  </div>
+                  <div class="videos">
+                     <img class="thumbnail" data-id="UFPDkBCDAMw"
+                        data-title="Menampilkan data artikel dari database menggunakan PHP PDO dan Bootstrap 5"
+                        src="img/artikel_thumb.jpg" alt="Database PDO Thumb">
+                     <div class="play-icon">
+                        <img src="img/youtube-play-btn.svg" alt="" />
+                     </div>
+                  </div>
+                  <div class="videos">
+                     <img class="thumbnail" data-id="5owDGYrDhRs"
+                        data-title="Menampilkan 1 tabel sekaligus dari 3 tabel menggunakan WHERE dan JOIN TABLE"
+                        src="img/where_join_thumb.jpg" alt="Where Join Thumb">
+                     <div class="play-icon">
+                        <img src="img/youtube-play-btn.svg" alt="" />
+                     </div>
+                  </div>
+                  <div class="videos">
+                     <img class="thumbnail" data-id="z_tqa-Kd5y0" data-title="Simple CV Bootstrap v5.2"
+                        src="img/simple_cv_thumb.jpeg" alt="Simple CV Thumb">
+                     <div class="play-icon">
+                        <img src="img/youtube-play-btn.svg" alt="" />
+                     </div>
+                  </div>
+                  <div class="videos">
+                     <img class="thumbnail" data-id="wfEuj-zUUFc" data-title="Membuat Tabel Bootstrap v5.2"
+                        src="img/table_thumb.jpeg" alt="Table Thumb">
+                     <div class="play-icon">
+                        <img src="img/youtube-play-btn.svg" alt="" />
+                     </div>
+                  </div>
+                  <div class="videos">
+                     <img class="thumbnail" data-id="C5LYizB0UfQ" data-title="Random Crew Teams Bootstrap v5.2"
+                        src="img/random_crew_thumb.jpeg" alt="Random Crew Thumb">
+                     <div class="play-icon">
+                        <img src="img/youtube-play-btn.svg" alt="" />
+                     </div>
+                  </div>
+                  <div class="videos">
+                     <img class="thumbnail" data-id="pgIjpRRQ6uE" data-title="MYSQL AGGREGATE FUNCTION"
+                        src="img/mysql_aggregate_thumb.jpg" alt="Mysql Aggregate Thumb">
+                     <div class="play-icon">
+                        <img src="img/youtube-play-btn.svg" alt="" />
+                     </div>
+                  </div>
+                  <div class="videos">
+                     <img class="thumbnail" data-id="CxceWA0WfTI"
+                        data-title="Membuat Database Pesanan (Member dan Produk)" src="img/db_pesanan_thumb.png"
+                        alt="db pesanan thumb">
+                     <div class="play-icon">
+                        <img src="img/youtube-play-btn.svg" alt="" />
+                     </div>
+                  </div>
+               </span>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- PURCHASE SECTION -->
+   <section id="purchase">
+      <div class="circle circle-one"></div>
+      <div class="circle circle-two"></div>
+      <div class="container">
+         <div class="title">
+            <h3>Join as Membership</h3>
+            <p>join and be one of us become a novice programmer and get the comment feature exclusively from us and get
+               cool emotes too</p>
+            <hr>
+         </div>
+         <div class="wrapp">
+            <div class="purchase-container">
+               <!-- card_container -->
+               <div class="card">
+                  <div class="card-body">
+                     <div class="card-title">
+                        <p>Basic</p>
+                     </div>
+                     <div class="card-text">
+                        <div class="title">
+                           <p><i class="fa-solid fa-dollar"></i>1</p>
+                        </div>
+                        <div class="text text-title">
+                           <p>Customer-only community posts</p>
+                        </div>
+                        <div class="text">
+                           <i class="fa-solid fa-circle-check"></i>
+                           <p>increase level 25%</p>
+                        </div>
+                        <div class="text">
+                           <i class="fa-solid fa-circle-check"></i>
+                           <p>get emote from channel</p>
+                        </div>
+                        <div class="text">
+                           <i class="fa-solid fa-circle-exclamation"></i>
+                           <p>customer-only live chat</p>
+                        </div>
+                        <div class="text">
+                           <i class="fa-solid fa-circle-exclamation"></i>
+                           <p>custom emoticons</p>
+                        </div>
+                     </div>
+                     <div class="card-button">
+                        <button>Purchase</button>
+                     </div>
+                  </div>
+               </div>
+               <!-- card_container -->
+               <div class="card">
+                  <div class="card-header recomend">
+                     <p>recommended</p>
+                  </div>
+                  <div class="card-body">
+                     <div class="card-title">
+                        <p>Standard</p>
+                     </div>
+                     <div class="card-text">
+                        <div class="title">
+                           <p><i class="fa-solid fa-dollar"></i>4</p>
+                        </div>
+                        <div class="text text-title">
+                           <p>Customer-only community posts</p>
+                        </div>
+                        <div class="text">
+                           <i class="fa-solid fa-circle-check"></i>
+                           <p>increase level 50%</p>
+                        </div>
+                        <div class="text">
+                           <i class="fa-solid fa-circle-check"></i>
+                           <p>get emote from channel</p>
+                        </div>
+                        <div class="text">
+                           <i class="fa-solid fa-circle-check"></i>
+                           <p>customer-only live chat</p>
+                        </div>
+                        <div class="text">
+                           <i class="fa-solid fa-circle-exclamation"></i>
+                           <p>custom emoticons</p>
+                        </div>
+                     </div>
+                     <div class="card-button">
+                        <button>Purchase</button>
+                     </div>
+                  </div>
+               </div>
+               <!-- card_container -->
+               <div class="card">
+                  <div class="card-body">
+                     <div class="card-title">
+                        <p>Premium</p>
+                     </div>
+                     <div class="card-text">
+                        <div class="title">
+                           <p><i class="fa-solid fa-dollar"></i>8</p>
+                        </div>
+                        <div class="text text-title">
+                           <p>Customer-only community posts</p>
+                        </div>
+                        <div class="text">
+                           <i class="fa-solid fa-circle-check"></i>
+                           <p>increase max level</p>
+                        </div>
+                        <div class="text">
+                           <i class="fa-solid fa-circle-check"></i>
+                           <p>get emote from channel</p>
+                        </div>
+                        <div class="text">
+                           <i class="fa-solid fa-circle-check"></i>
+                           <p>customer-only live chat</p>
+                        </div>
+                        <div class="text">
+                           <i class="fa-solid fa-circle-check"></i>
+                           <p>custom emoticons</p>
+                        </div>
+                     </div>
+                     <div class="card-button">
+                        <button>Purchase</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- mini promote -->
+   <section id="mini-promote">
+      <div class="bigLine"></div>
+      <div class="container">
+         <div class="wrapp wrapp-desktop">
+            <img src="img/desktop.png" alt="web deskstop">
+            <video src="video/vid-ytpromotion.mp4" muted autoplay loop></video>
+         </div>
+         <div class="wrapp wrapp-note">
+            <h3>Dont Forget to Subscribe</h3>
+            <p>Watch the latest videos from me, join as a member to get many insteresting features and dont forget to
+               subscribe to my channel and turn on the notification bell so you dont miss interesting videos about
+               coding from me.</p>
+            <hr>
+            <a href="#purchase" class="to-member">
+               <button type="button">Join as Membership</button>
+            </a>
+         </div>
+      </div>
+   </section>
+
+   <!-- CONTACT SECTION -->
+   <section id="contact">
+      <div class="circle circle-one"></div>
+      <div class="container">
+         <div class="title">
+            <h3>Contact Me</h3>
+            <hr>
+         </div>
+         <div class="wrapp">
+            <div class="contact-wrapp">
+               <div class="contact contact-left">
+                  <h3>Contact Information</h3>
+                  <p>For further information, if you have suggestions, criticisms, or anything you want to ask, you can
+                     send a direct message or via email and my phone.</p>
+                  <div class="contact-inform">
+                     <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                     <p>+62 896 1374 2316</p>
+                  </div>
+                  <div class="contact-inform">
+                     <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                     <p>adyaabduazizulhakim@gmail.com</p>
+                  </div>
+                  <div class="contact-inform">
+                     <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                     <p>Jl. Pancuran Plelen, Rt.02/Rw.08, Kec. Gringsing, Kab. Batang, Jawa Tengah</p>
+                  </div>
+               </div>
+               <div class="contact contact-right">
+                  <form action="https://formsubmit.co/adyaabduazizulhakim@gmail.com" method="post" autocomplete="off">
+                     <div class="group-input group-name">
+                        <div class="name">
+                           <input type="text" name="First_Name" id="firstName" required
+                              oninvalid="this.setCustomValidity('Please insert your First Name')"
+                              oninput="this.setCustomValidity('')">
+                           <label for="firstName">First Name</label>
+                        </div>
+                        <div class="name">
+                           <input type="text" name="Last_Name" id="firstName" required
+                              oninvalid="this.setCustomValidity('Please insert your Last Name')"
+                              oninput="this.setCustomValidity('')">
+                           <label for="lastName">Last Name</label>
+                        </div>
+                     </div>
+                     <div class="group-input">
+                        <input type="text" name="Subject" id="subject" required
+                           oninvalid="this.setCustomValidity('Please insert your subjection')"
+                           oninput="this.setCustomValidity('')">
+                        <label for="subject">Subject</label>
+                     </div>
+                     <div class="group-input">
+                        <input type="text" name="Email" id="email" required
+                           oninvalid="this.setCustomValidity('Please insert a valid email adress using @example.com')"
+                           oninput="this.setCustomValidity('')">
+                        <label for="email">Email</label>
+                     </div>
+                     <div class="group-input">
+                        <textarea name="Message" id="message" cols="30" rows="2" required
+                           oninvalid="this.setCustomValidity('Please enter the messages you want to convey')"
+                           oninput="this.setCustomValidity('')"></textarea>
+                        <label for="message">Messages</label>
+                     </div>
+                     <div class="group-input">
+                        <button type="submit">Send Message</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- footer & payment methods-->
+   <footer>
+      <div class="container">
+         <div class="wrapp">
+            <div class="footer footer-brands">
+               <a href="https://www.youtube.com/channel/UCnyvM20nDQmtc2aG--WMqqg" target="_blank">
+                  <span>Adya Abdu Azizul Hakim</span>
+                  <span>youtube channel</span>
+               </a>
+               <div class="footer-sosmed">
+                  <a href="https://web.facebook.com/abdu.zv" target="_blank">
+                     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                     </svg>
+                  </a>
+                  <a href="https://twitter.com/AbduAdya" target="_blank">
+                     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                     </svg>
+                  </a>
+                  <a href="https://www.instagram.com/az.izul_" target="_blank">
+                     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                     </svg>
+                  </a>
+                  <a href="https://github.com/azulzv" target="_blank">
+                     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                     </svg>
+                  </a>
+                  <a href="#" target="_blank">
+                     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                     </svg>
+                  </a>
+               </div>
+            </div>
+            <div class="footer footer-payment">
+               <div class="payment-methods">
+                  <div class="payment-img">
+                     <a href="#">
+                        <img src="img/PayPal.png" alt="PayPal">
+                     </a>
+                  </div>
+                  <div class="payment-img">
+                     <a href="#">
+                        <img src="img/brimo.png" alt="BRI Mobile">
+                     </a>
+                  </div>
+                  <div class="payment-img">
+                     <a href="#">
+                        <img src="img/visa.png" alt="Visa">
+                     </a>
+                  </div>
+                  <div class="payment-img">
+                     <a href="#">
+                        <img src="img/Dana.png" alt="Dana">
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="copyright-footer">
+            <p>&copy; All Right Reserved. By Adya Abdu Azizul Hakim</p>
+         </div>
+      </div>
+   </footer>
+
+
+
+   <!-- To-home Toggle -->
+   <a href="#home" class="to-home" role="button">
+      <svg role="button" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+         <path d="M24 16.085L11.994 4.091 0 16.097l3.817 3.812 8.182-8.189 8.189 8.182z" />
+      </svg>
+   </a>
+
+   <!-- Cursor Animation -->
+   <div class="cursor" id="cursor"></div>
+
+   <script src="js/app.js"></script>
+</body>
+
+</html>
