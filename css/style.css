@@ -158,6 +158,7 @@ html {
    --shadow-5: #1e293b;
    --success: #22c55e;
    --error: #fb923c;
+   overflow-x: hidden;
 }
 
 /* light theme conf */
