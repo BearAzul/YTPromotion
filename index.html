@@ -52,7 +52,7 @@
                <li><a href="#about">ABOUT</a></li>
                <li><a href="#last-content">CONTENT</a></li>
                <li><a href="#purchase">PATRONIZE</a></li>
-               <li><a href="#contact">CONTACT</a></li> 
+               <li><a href="#contact">CONTACT</a></li>
             </ul>
             <div class="sub">
                <a href="https://www.youtube.com/channel/UCnyvM20nDQmtc2aG--WMqqg" target="_blank">SUBSCRIBE</a>
@@ -191,25 +191,52 @@
                      up. Although not
                      very active in campus organization membership. But I have high interest in FrontEnd Programming and
                      Web Development.</p>
-                  <div class="group">
-                     <div class="group-text">
-                        <div class="text">
-                           <label>Name :</label>
-                           <p>Adya Abdu Azizul Hakim</p>
-                        </div>
-                        <div class="text">
-                           <label>Email :</label>
-                           <p>adyaabduazizulhakim@gmail.com</p>
-                        </div>
+                  <div class="slide_wrap">
+                     <div class="slide_title">
+                        <input type="radio" id="profile" name="slide" checked>
+                        <input type="radio" id="skill" name="slide">
+                        <label class="title_profile" for="profile">Profile</label>
+                        <label class="title_skill" for="skill">Skills</label>
+                        <div class="slide_bg"></div>
                      </div>
-                     <div class="group-text">
-                        <div class="text">
-                           <label>Phone :</label>
-                           <p>+62 896 1374 2316</p>
+                     <div class="slide_container">
+                        <div class="group group-profile" id="profile-inform">
+                           <div class="group-text">
+                              <div class="text">
+                                 <label>Name :</label>
+                                 <p>Adya Abdu Azizul Hakim</p>
+                              </div>
+                              <div class="text">
+                                 <label>Email :</label>
+                                 <p>adyaabduazizulhakim@gmail.com</p>
+                              </div>
+                           </div>
+                           <div class="group-text">
+                              <div class="text">
+                                 <label>Phone :</label>
+                                 <p>+62 896 1374 2316</p>
+                              </div>
+                              <div class="text">
+                                 <label>Link github :</label>
+                                 <p>https://github.com/azulzv</p>
+                              </div>
+                           </div>
                         </div>
-                        <div class="text">
-                           <label>Link github :</label>
-                           <p>https://github.com/azulzv</p>
+                        <div class="group group-skill" id="skill-inform">
+                           <div class="group-text">
+                              <div class="text">
+                                 <label>HTML</label>
+                                 <span class="bars bars_one"></span>
+                              </div>
+                              <div class="text">
+                                 <label>CSS</label>
+                                 <span class="bars bars_two"></span>
+                              </div>
+                              <div class="text">
+                                 <label>JavaScript</label>
+                                 <span class="bars bars_three"></span>
+                              </div>
+                           </div>
                         </div>
                      </div>
                   </div>
@@ -485,7 +512,8 @@
                   </div>
                </div>
                <div class="contact contact-right">
-                  <form action="https://formsubmit.co/e9d58d784a3b72f8aa4e16312988392e" method="post" autocomplete="off">
+                  <form action="https://formsubmit.co/e9d58d784a3b72f8aa4e16312988392e" method="post"
+                     autocomplete="off">
                      <div class="group-input group-name">
                         <div class="name">
                            <input type="text" name="First_Name" id="firstName" required
@@ -617,6 +645,7 @@
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <script>
       AOS.init({
+         onece: true,
          duration: 700,
       });
    </script>

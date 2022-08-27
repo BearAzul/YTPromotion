@@ -44,7 +44,7 @@ btnMore.addEventListener("click", () => {
 // Cursor Configuration
 const cursor = document.querySelector("#cursor");
 
-document.addEventListener("mousemove", e => {
+document.addEventListener("mousemove", (e) => {
   cursor.setAttribute(
     "style",
     "top: " + (e.pageY - 15) + "px; left: " + (e.pageX - 15) + "px;"
@@ -102,3 +102,19 @@ if (
 } else {
   themeMode.checked = false;
 }
+
+// slide
+const skillBtn = document.querySelector("#skill");
+const profileBtn = document.querySelector("#profile");
+const skill = document.querySelector(".slide_container");
+
+skillBtn.addEventListener("click", (e) => {
+  if (e.target.checked) {
+    skill.style.marginLeft = "-665px";
+  }
+});
+profileBtn.addEventListener("click", (e) => {
+  if (e.target.checked) {
+    skill.style.marginLeft = "0";
+  }
+});
