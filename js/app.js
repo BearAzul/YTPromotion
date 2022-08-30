@@ -27,20 +27,6 @@ window.onscroll = () => {
   }
 };
 
-// Read More Event
-const readMore = document.getElementById("readMore");
-const btnMore = document.getElementById("btnMore");
-
-btnMore.addEventListener("click", () => {
-  if (readMore.style.display == "block") {
-    readMore.style.display = "none";
-    btnMore.innerHTML = "read more";
-  } else {
-    readMore.style.display = "block";
-    btnMore.innerHTML = "read less";
-  }
-});
-
 // Cursor Configuration
 const cursor = document.querySelector("#cursor");
 
@@ -103,7 +89,7 @@ if (
   themeMode.checked = false;
 }
 
-// slide
+// slide skills or profile
 const skillBtn = document.querySelector("#skill");
 const profileBtn = document.querySelector("#profile");
 const skill = document.querySelector(".slide_container");
@@ -117,4 +103,10 @@ profileBtn.addEventListener("click", (e) => {
   if (e.target.checked) {
     skill.style.marginLeft = "0";
   }
+});
+
+// aos animate conf
+AOS.init({
+  once: true,
+  duration: 700,
 });

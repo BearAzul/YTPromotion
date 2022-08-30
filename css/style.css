@@ -618,26 +618,6 @@ body {
    gap: 50px;
 }
 
-#about>.container>.title>.btnMore {
-   display: none;
-   margin: 20px auto 0;
-   padding: 2px 8px;
-   font-size: 16px;
-   font-weight: 500;
-   border: none;
-   outline: none;
-   background: var(--error);
-   color: var(--color-7);
-   cursor: pointer;
-   border-radius: 4px;
-   transition: .3s;
-}
-
-#about>.container>.title>.btnMore:hover {
-   background: var(--color-6);
-   color: #e2e8f0;
-}
-
 #about>.container>.wrapp {
    display: flex;
    flex-direction: row;
@@ -784,7 +764,7 @@ body {
 #about>.container>.wrapp>.details:nth-child(2)>#readMore .slide_container .group .group-text .text label {
    color: var(--color-6);
    font-weight: 600;
-   font-size: 18px;
+   font-size: 16px;
    letter-spacing: .6px;
 }
 
@@ -798,32 +778,38 @@ body {
    display: block;
    width: 500px;
    height: 12px;
-   background: var(--rgba-);
+   background: var(--bg-2);
    border-radius: 2px;
    position: relative;
    margin-top: 5px;
+   box-shadow: 2px 2px 4px var(--shadow-4),
+      -2px -2px 4px var(--shadow-5);
 }
 
-#about>.container>.wrapp>.details:nth-child(2)>#readMore .slide_container .group .group-text .text .bars::before {
-   content: "";
+#about>.container>.wrapp>.details:nth-child(2)>#readMore .slide_container .group .group-text .text .bars span {
    position: absolute;
    top: 0;
    left: 0;
    border-radius: 2px;
    height: 12px;
    background: #fb923c;
+   color: var(--color-5);
+   padding: 0 5px;
+   text-align: end;
+   font-size: 8.5px;
 }
 
-#about>.container>.wrapp>.details:nth-child(2)>#readMore .slide_container .group .group-text .text .bars_one::before {
-   width: 470px;
+
+#about>.container>.wrapp>.details:nth-child(2)>#readMore .slide_container .group .group-text .text .bars .bars_one {
+   width: 370px;
 }
 
-#about>.container>.wrapp>.details:nth-child(2)>#readMore .slide_container .group .group-text .text .bars_two::before {
-   width: 400px;
+#about>.container>.wrapp>.details:nth-child(2)>#readMore .slide_container .group .group-text .text .bars .bars_two {
+   width: 440px;
 }
 
-#about>.container>.wrapp>.details:nth-child(2)>#readMore .slide_container .group .group-text .text .bars_three::before {
-   width: 300px;
+#about>.container>.wrapp>.details:nth-child(2)>#readMore .slide_container .group .group-text .text .bars .bars_three {
+   width: 230px;
 }
 
 /* Last Content Section */
@@ -1627,9 +1613,6 @@ footer>.container>.copyright-footer>p {
       width: 450px;
    }
 
-   #about>.container>.wrapp>.details:nth-child(2)>#readMore{
-      display: none;
-   }
    #about>.container>.wrapp>.details:nth-child(2)>#readMore .slide_wrap {
       width: 100%;
    }
@@ -1647,15 +1630,15 @@ footer>.container>.copyright-footer>p {
       width: 400px;
    }
 
-   #about>.container>.wrapp>.details:nth-child(2)>#readMore .slide_container .group .group-text .text .bars_one::before {
+   #about>.container>.wrapp>.details:nth-child(2)>#readMore .slide_container .group .group-text .text .bars .bars_one {
       width: 370px;
    }
 
-   #about>.container>.wrapp>.details:nth-child(2)>#readMore .slide_container .group .group-text .text .bars_two::before {
+   #about>.container>.wrapp>.details:nth-child(2)>#readMore .slide_container .group .group-text .text .bars .bars_two {
       width: 300px;
    }
 
-   #about>.container>.wrapp>.details:nth-child(2)>#readMore .slide_container .group .group-text .text .bars_three::before {
+   #about>.container>.wrapp>.details:nth-child(2)>#readMore .slide_container .group .group-text .text .bars .bars_three {
       width: 200px;
    }
 
@@ -1867,30 +1850,31 @@ footer>.container>.copyright-footer>p {
 
    #about>.container>.wrapp>.details:nth-child(2)>#readMore>.slide_wrap .slide_container {
       width: 300px;
+      gap: 405px;
    }
 
    #about>.container>.wrapp>.details:nth-child(2)>#readMore .slide_container .group .group-text .text p,
-   #about>.container>.wrapp>.details:nth-child(2)>#readMore>.slide_wrap .slide_container>p {
-      font-size: 16px;
+   #about>.container>.wrapp>.details:nth-child(2)>#readMore p {
+      font-size: 14px;
    }
 
-   #about>.container>.wrapp>.details:nth-child(2)>#readMore>.slide_wrap .slide_container>label {
-      font-size: 18px;
+   #about>.container>.wrapp>.details:nth-child(2)>#readMore>.slide_wrap .slide_container .group .group-text .text label {
+      font-size: 14px;
    }
 
    #about>.container>.wrapp>.details:nth-child(2)>#readMore .slide_container .group .group-text .text .bars {
       width: 290px;
    }
 
-   #about>.container>.wrapp>.details:nth-child(2)>#readMore .slide_container .group .group-text .text .bars_one::before {
-      width: 270px;
+   #about>.container>.wrapp>.details:nth-child(2)>#readMore .slide_container .group .group-text .text .bars .bars_one {
+      width: 230px;
    }
 
-   #about>.container>.wrapp>.details:nth-child(2)>#readMore .slide_container .group .group-text .text .bars_two::before {
-      width: 200px;
+   #about>.container>.wrapp>.details:nth-child(2)>#readMore .slide_container .group .group-text .text .bars .bars_two {
+      width: 260px;
    }
 
-   #about>.container>.wrapp>.details:nth-child(2)>#readMore .slide_container .group .group-text .text .bars_three::before {
+   #about>.container>.wrapp>.details:nth-child(2)>#readMore .slide_container .group .group-text .text .bars .bars_three {
       width: 100px;
    }
 
