@@ -96,7 +96,7 @@ const skill = document.querySelector(".slide_container");
 
 skillBtn.addEventListener("click", (e) => {
   if (e.target.checked) {
-    skill.style.marginLeft = "-665px";
+    skill.style.marginLeft = "-100%";
   }
 });
 profileBtn.addEventListener("click", (e) => {
